@@ -19,7 +19,7 @@
     <li><a href="{{ profile_url }}"><strong>{{ numConnections }}</strong> connections</a></li>
   </ul>
   <div class="profile-info-footer">
-    <a href="{{ profile_url }}" class="btn">View Profile</a>
+    <a href="{{ publicProfileUrl }}" target="_blank" class="btn">View Profile</a>
   </div>
   {{/with}}
 
@@ -33,7 +33,7 @@
     {{/if}}
     {{#if positions}}
     <div class="linkedin-sec">
-      <h3>Experience</h3>
+      <h3>Current Position</h3>
       <ul class="linkedin-experience">
         {{#each positions.values}}
         <li>

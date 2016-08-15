@@ -31,7 +31,7 @@ def linkedin_view(request):
     profile_data = application.get_profile(selectors=['id', 'first-name', 'last-name', 'headline', 'location',
                                                       'num-connections', 'skills', 'educations', 'picture-url',
                                                       'site-standard-profile-request', 'summary', 'positions',
-                                                      'industry'])
+                                                      'industry','public-profile-url'])
 
     context = {'profile': profile_data}
 
